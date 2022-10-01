@@ -1,0 +1,8 @@
+set(TARGET_NAME Matrix)
+
+file(GLOB Matrix_HEADERS CONFIGURE_DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/include/*.h)
+file(GLOB Matrix_SOURCES CONFIGURE_DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/source/*.c)
+
+source_group(TREE "${CMAKE_CURRENT_SOURCE_DIR}" FILES ${Matrix_HEADERS} ${Matrix_SOURCES})
+
+add_executable(${TARGET_NAME} ${Matrix_HEADERS} ${Matrix_SOURCES})
