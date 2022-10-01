@@ -1,5 +1,10 @@
 #include <stdio.h>
 
 int main(int argc, char* argv[]) {
-    printf("Knock, knock, Neo\n");
+    if (argc == 2) {
+        printf("Knock, knock, %s\n", argv[1]);
+    } else {
+        fprintf(stderr, "Usage: %s <name>\n", argv[0]);
+    }
+    return 0;
 }
