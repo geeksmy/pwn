@@ -1,0 +1,8 @@
+set(TARGET_NAME License_1)
+
+file(GLOB License_1_HEADERS CONFIGURE_DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/include/*.h)
+file(GLOB License_1_SOURCES CONFIGURE_DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/source/*.c)
+
+source_group(TREE "${CMAKE_CURRENT_SOURCE_DIR}" FILES ${License_1_HEADERS} ${License_1_SOURCES})
+
+add_executable(${TARGET_NAME} ${License_1_HEADERS} ${License_1_SOURCES})

@@ -8,3 +8,4 @@ set(SOURCE_ROOT_DIR ${PROJECT_ROOT_DIR}/source)
 include_directories(${SOURCE_ROOT_DIR})
 
 add_subdirectory(source/matrix)
+add_subdirectory(source/license_1)
